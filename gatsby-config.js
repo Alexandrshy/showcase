@@ -7,17 +7,16 @@
 module.exports = {
   siteMetadata: {
     title: "Alexandr Shulaev",
-    siteUrl: "",
     description: "Personal Portfolio Website",
   },
   plugins: [
-    {
-      resolve: "gatsby-source-contentful",
-      options: {
-        spaceId: "",
-        accessToken: "",
-      },
-    },
+    // {
+    //   resolve: "gatsby-source-contentful",
+    //   options: {
+    //     spaceId: "",
+    //     accessToken: "",
+    //   },
+    // },
     "gatsby-plugin-typescript",
   ],
 }

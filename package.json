@@ -11,6 +11,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "type-check": "tsc --noEmit --skipLibCheck",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "husky": {
@@ -26,18 +27,23 @@
   },
   "dependencies": {
     "gatsby": "^2.18.4",
+    "gatsby-plugin-tslint": "^0.0.2",
     "gatsby-plugin-typescript": "^2.1.20",
-    "gatsby-source-contentful": "^2.1.66",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
     "@types/node": "^12.12.14",
-    "@types/react": "^16.9.14",
+    "@types/react": "^16.9.15",
     "@types/react-dom": "^16.9.4",
     "husky": "^3.1.0",
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-loader": "^3.5.4",
+    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-react": "^4.1.0",
     "typescript": "^3.7.3"
   },
   "repository": {
