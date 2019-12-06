@@ -1,0 +1,31 @@
+:root {
+  --black-pearl: #1f2029;
+  --athens-gray: #f9f9fa;
+  --mine-shaft: #292929;
+  --white: #ecedf3;
+
+  /* Font family */
+  --default-font-style: normal;
+  --italic-font-style: italic;
+  --default-font-family: Arial;
+  --italic-font-family: Georgia;
+  --font-family-georgia: Georgia;
+  --font-poppins: "Poppins", sans-serif;
+
+  /* Font weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  /* Animation */
+  --linear-color: color 0.3s ease-out;
+  --linear-background-color: background-color 0.3s ease-out;
+
+  --bg-color: var(--black-pearl);
+  --font-color: var(--white);
+}
+
+[data-theme="light"] {
+  --bg-color: var(--athens-gray);
+  --font-color: var(--mine-shaft);
+}
