@@ -17,6 +17,14 @@ module.exports = {
     //     accessToken: "",
     //   },
     // },
+    // Add typescript
     "gatsby-plugin-typescript",
+    // Add google font
+    {
+      resolve: "gatsby-plugin-google-fonts",
+      options: {
+        fonts: ["Poppins"],
+      },
+    },
   ],
 }
