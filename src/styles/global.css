@@ -15,7 +15,7 @@ body {
   background-color: var(--bg-color);
   font-family: var(--font-poppins);
   color: var(--font-color);
-  transition: var(--linear-background-color), var(--linear-color);
+  transition: var(--ease-in-out-all);
 }
 
 body,
@@ -33,6 +33,10 @@ blockquote,
 dl,
 dd {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
