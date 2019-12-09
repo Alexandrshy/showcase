@@ -1,25 +1,11 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import React from "react"
 
-const MENU = [
-  {
-    title: "About",
-    path: "/about",
-  },
-]
+import { Menu } from "../menu/menu"
 
 export const Header: React.FC = () => {
   return (
     <header>
-      <nav>
-        <ul>
-          {MENU.map(({ title, path }) => (
-            <li>
-              <a href={path}>{title}</a>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <Menu />
     </header>
   )
 }
