@@ -1,8 +1,6 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
+if (process.env.NODE_ENV === "development") {
+  require("dotenv").config()
+}
 
 module.exports = {
   siteMetadata: {
@@ -10,20 +8,28 @@ module.exports = {
     description: "Personal Portfolio Website",
   },
   plugins: [
-    // {
-    //   resolve: "gatsby-source-contentful",
-    //   options: {
-    //     spaceId: "",
-    //     accessToken: "",
-    //   },
-    // },
+    // Add support contentful
+    {
+      resolve: "gatsby-source-contentful",
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+    // Parse all markdown files
+    "gatsby-transformer-remark",
     // Add typescript
     "gatsby-plugin-typescript",
     // Add google font
     {
-      resolve: "gatsby-plugin-google-fonts",
+      resolve: "gatsby-plugin-prefetch-google-fonts",
       options: {
-        fonts: ["Poppins"],
+        fonts: [
+          {
+            family: `Poppins`,
+            variants: [`300`, `400`, `500`, `700`],
+          },
+        ],
       },
     },
   ],
