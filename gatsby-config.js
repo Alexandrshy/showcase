@@ -21,6 +21,19 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+    // Add a manifest file
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "Blog by Alexandr Shulaev",
+        short_name: "Blog by Alexandr Shulaev",
+        start_url: "/",
+        background_color: "#f1db4f",
+        theme_color: "#31332f",
+        icon: "static/favicon.ico",
+        include_favicon: true,
+      },
+    },
     // Parse all markdown files
     "gatsby-transformer-remark",
     // Add typescript

@@ -12,11 +12,11 @@ module.exports = {
       path: "/blog",
     },
     {
-      label: "About",
+      label: "About me",
       path: "/about",
     },
     {
-      label: "Contact",
+      label: "Contact me",
       path: "/contact",
     },
     {
@@ -26,7 +26,7 @@ module.exports = {
   ],
   author: {
     name: "Alexandr Shulaev",
-    photo: "/intro-logo.png",
+    photo: "/intro-photo.png",
     contacts: {
       email: "alexandrshy@gmail.com",
       telegram: "@alexandrshy",
