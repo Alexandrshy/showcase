@@ -1,14 +1,19 @@
+const siteConfig = require("./config")
+
 if (process.env.NODE_ENV === "development") {
   require("dotenv").config()
 }
 
 module.exports = {
   siteMetadata: {
-    title: "Alexandr Shulaev",
-    description: "Personal Portfolio Website",
+    title: siteConfig.title,
+    url: siteConfig.url,
+    description: siteConfig.description,
+    menu: siteConfig.menu,
+    author: siteConfig.author,
+    social: siteConfig.social,
   },
   plugins: [
-    // Add support contentful
     {
       resolve: "gatsby-source-contentful",
       options: {
