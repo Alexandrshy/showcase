@@ -4,12 +4,12 @@ import { Link } from "gatsby"
 import { Layout } from "../components/layout/layout"
 import { Intro } from "../components/intro/intro"
 
-const Main: React.FC = () => {
+const About: React.FC = () => {
   return (
     <Layout>
-      <Intro />
+      <h1>About</h1>
     </Layout>
   )
 }
 
-export default Main
+export default About
