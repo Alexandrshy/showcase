@@ -24,8 +24,6 @@ module.exports = {
         start_url: "/",
         background_color: "#f1db4f",
         theme_color: "#31332f",
-        icon: "static/favicon.ico",
-        include_favicon: true,
       },
     },
     // Parse all markdown files
