@@ -35,6 +35,11 @@ dd {
   margin: 0;
 }
 
+h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
 a {
   text-decoration: none;
 }
@@ -87,5 +92,17 @@ ol {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 22px;
   }
 }

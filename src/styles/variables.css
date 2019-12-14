@@ -1,11 +1,15 @@
 :root {
+  --black: #000000;
   --black-pearl: #1c1c1c;
+  --black-pearl-rgba: 28, 28, 28, 0.16;
   --athens-gray: #f9f9fa;
+  --athens-gray-rgba: 249, 249, 250, 0.05;
   --mine-shaft: #292929;
   --white: #ecedf3;
   --boulder: #757575;
   --susty-gray: #979797;
   --mercury: #e1e1e1;
+  --gallery: #ededed;
 
   /* Font family */
   --default-font-style: normal;
@@ -22,19 +26,32 @@
   --font-weight-bold: 700;
 
   /* Animation */
+  --cubic-bezier: cubic-bezier(0.78, 0.14, 0.15, 0.86);
   --ease-in-out-color-small: color 0.15s ease-in-out;
   --ease-in-out-color-medium: color 0.3s ease-in-out;
   --ease-in-out-all: all 0.3s ease-in-out;
+  --cubic-bezier-mask: opacity 0.3s var(--cubic-bezier), height 0s ease 0.3s;
+  --cubic-bezier-menu: transform 0.3s var(--cubic-bezier),
+    box-shadow 0.3s var(--cubic-bezier);
+  --cubic-bezier-amimation-mask: 0.3s var(--cubic-bezier);
 
   --bg-color: var(--black-pearl);
   --font-color: var(--white);
+  --social-link-color: var(--susty-gray);
+  --social-link-color-active: var(--mercury);
   --menu-link-color: var(--susty-gray);
   --menu-link-color-active: var(--mercury);
+  --box-shadow: var(--athens-gray-rgba);
+  --menu-hamburger-color: var(--athens-gray);
 }
 
 [data-theme="light"] {
   --bg-color: var(--athens-gray);
   --font-color: var(--mine-shaft);
+  --social-link-color: var(--boulder);
+  --social-link-color-active: var(--mine-shaft);
   --menu-link-color: var(--boulder);
   --menu-link-color-active: var(--mine-shaft);
+  --box-shadow: var(--black-pearl-rgba);
+  --menu-hamburger-color: var(--black-pearl);
 }
