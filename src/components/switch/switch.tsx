@@ -5,7 +5,7 @@ import useDarkMode from "../../hooks/use-dark-mode"
 
 import style from "./switch.module.css"
 
-export const Switch: React.FC = () => {
+const Switch: React.FC = () => {
   const [darkMode, prefersDarkMode] = useDarkMode()
 
   return (
@@ -24,3 +24,5 @@ export const Switch: React.FC = () => {
     </div>
   )
 }
+
+export default Switch

@@ -1,9 +1,11 @@
 import React, { ReactNode } from "react"
 import Helmet from "react-helmet"
+import Loadable from "@loadable/component"
 
 import { Header } from "../../components/header/header"
 import { Footer } from "../../components/footer/footer"
-import { Switch } from "../../components/switch/switch"
+// import { Switch } from "../../components/switch/switch"
+const Switch = Loadable(() => import("../../components/switch/switch"))
 
 import useSiteMetadata from "../../hooks/use-site-metadata"
 
@@ -22,6 +24,7 @@ export const Layout: React.FC<PropsType> = ({
   description,
   image,
 }) => {
+  const isSSR = typeof window === "undefined"
   const {
     title: configTitle,
     description: configDescription,
@@ -45,7 +48,11 @@ export const Layout: React.FC<PropsType> = ({
         <meta name="twitter:image" content={customImage} />
       </Helmet>
       <Header />
-      <Switch />
+      {!isSSR && (
+        <React.Suspense fallback={<div>123123</div>}>
+          <Switch />
+        </React.Suspense>
+      )}
       <main>{children}</main>
       <Footer />
     </div>
