@@ -14,13 +14,7 @@ module.exports = {
     social: siteConfig.social,
   },
   plugins: [
-    {
-      resolve: "gatsby-source-contentful",
-      options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-      },
-    },
+    "gatsby-plugin-netlify-cms",
     // Add a manifest file
     {
       resolve: "gatsby-plugin-manifest",

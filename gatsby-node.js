@@ -9,30 +9,28 @@ exports.createPages = async ({ graphql, actions }) => {
   })
 
   try {
-    const result = await graphql(`
-      {
-        allContentfulBlog(limit: 100) {
-          edges {
-            node {
-              title
-              slug
-            }
-          }
-        }
-      }
-    `)
-
-    const { edges } = result.data.allContentfulBlog
-
-    edges.forEach(edge => {
-      createPage({
-        path: edge.node.slug,
-        component: path.resolve("./src/templates/blog-post.tsx"),
-        context: {
-          slug: edge.node.slug,
-        },
-      })
-    })
+    // const result = await graphql(`
+    //   {
+    //     allContentfulBlog(limit: 100) {
+    //       edges {
+    //         node {
+    //           title
+    //           slug
+    //         }
+    //       }
+    //     }
+    //   }
+    // `)
+    // const { edges } = result.data.allContentfulBlog
+    // edges.forEach(edge => {
+    //   createPage({
+    //     path: edge.node.slug,
+    //     component: path.resolve("./src/templates/blog-post.tsx"),
+    //     context: {
+    //       slug: edge.node.slug,
+    //     },
+    //   })
+    // })
   } catch (error) {
     console.log(error)
   }
