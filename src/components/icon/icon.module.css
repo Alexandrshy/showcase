@@ -1,0 +1,17 @@
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  text-align: center;
+  text-transform: none;
+}
+
+@media (max-width: 640px) {
+  .icon {
+    width: 18px;
+    height: 18px;
+  }
+}
