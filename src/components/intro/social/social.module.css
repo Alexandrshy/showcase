@@ -1,0 +1,30 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.link {
+  display: inline-block;
+  padding: 5px;
+  font-size: 0;
+  color: var(--social-link-color);
+}
+
+.link:hover {
+  color: var(--social-link-color-active);
+}
+
+.link:focus {
+  color: var(--menu-link-color-active);
+  outline: var(--menu-link-color-active) auto 5px;
+}
+
+@media (max-width: 640px) {
+  .list {
+    justify-content: center;
+  }
+}
