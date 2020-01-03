@@ -59,6 +59,7 @@
     "@types/react-helmet": "^5.0.14",
     "@types/react-loadable": "^5.5.3",
     "gatsby-plugin-react-helmet": "^3.1.18",
+    "gatsby-source-filesystem": "^2.1.43",
     "husky": "^3.1.0",
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
