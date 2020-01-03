@@ -14,6 +14,7 @@ module.exports = {
     social: siteConfig.social,
   },
   plugins: [
+    "gatsby-plugin-react-helmet",
     "gatsby-plugin-netlify-cms",
     // Add a manifest file
     {
@@ -24,6 +25,7 @@ module.exports = {
         start_url: "/",
         background_color: "#f1db4f",
         theme_color: "#31332f",
+        icon: `src/images/icon.png`,
       },
     },
     // Parse all markdown files
