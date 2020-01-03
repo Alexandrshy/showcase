@@ -36,6 +36,9 @@ module.exports = {
         name: "images",
       },
     },
+    // Exposes several image processing functions built on the Sharp image processing library
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     "gatsby-plugin-netlify-cms",
     // Add a manifest file
     {
