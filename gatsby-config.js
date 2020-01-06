@@ -15,13 +15,13 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-react-helmet",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/static/img`,
-        name: "uploads",
-      },
-    },
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     path: `${__dirname}/static/img`,
+    //     name: "uploads",
+    //   },
+    // },
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -29,17 +29,16 @@ module.exports = {
         name: "pages",
       },
     },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/src/img`,
-        name: "images",
-      },
-    },
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     path: `${__dirname}/src/img`,
+    //     name: "images",
+    //   },
+    // },
     // Exposes several image processing functions built on the Sharp image processing library
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    "gatsby-plugin-netlify-cms",
     // Add a manifest file
     {
       resolve: "gatsby-plugin-manifest",
@@ -68,5 +67,12 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: "gatsby-plugin-netlify-cms",
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`,
+      },
+    },
+    "gatsby-plugin-netlify",
   ],
 }

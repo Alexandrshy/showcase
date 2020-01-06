@@ -8,11 +8,6 @@ exports.createPages = async ({ graphql, actions }) => {
     component: path.resolve("./src/templates/not-found-template.tsx"),
   })
 
-  createPage({
-    path: "/tags",
-    component: path.resolve("./src/templates/tags-list-template.tsx"),
-  })
-
   try {
     const result = await graphql(`
       {
@@ -20,6 +15,9 @@ exports.createPages = async ({ graphql, actions }) => {
           edges {
             node {
               id
+              frontmatter {
+                templateKey
+              }
             }
           }
         }
