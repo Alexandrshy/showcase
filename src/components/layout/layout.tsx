@@ -1,12 +1,9 @@
 import React, { ReactNode } from "react"
 import Helmet from "react-helmet"
-import Loadable from "@loadable/component"
 
 import { Header } from "../../components/header/header"
 import { Footer } from "../../components/footer/footer"
-// import { Switch } from "../../components/switch/switch"
-const Switch = Loadable(() => import("../../components/switch/switch"))
-
+import { Switch } from "../../components/switch/switch"
 import useSiteMetadata from "../../hooks/use-site-metadata"
 
 import style from "./layout.module.css"
@@ -49,7 +46,7 @@ export const Layout: React.FC<PropsType> = ({
       </Helmet>
       <Header />
       {!isSSR && (
-        <React.Suspense fallback={<div>123123</div>}>
+        <React.Suspense fallback={<div>Loading</div>}>
           <Switch />
         </React.Suspense>
       )}

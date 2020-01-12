@@ -43,6 +43,7 @@
   --menu-link-color-active: var(--mercury);
   --box-shadow: var(--athens-gray-rgba);
   --menu-hamburger-color: var(--athens-gray);
+  --switch-bg: var(--athens-gray);
 }
 
 [data-theme="light"] {
@@ -54,4 +55,5 @@
   --menu-link-color-active: var(--mine-shaft);
   --box-shadow: var(--black-pearl-rgba);
   --menu-hamburger-color: var(--black-pearl);
+  --switch-bg: var(--black-pearl);
 }
