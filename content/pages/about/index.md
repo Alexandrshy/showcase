@@ -1,7 +1,7 @@
 ---
 template: about-page
 title: About our values
-image: /assets/erik-mclean-7wetgllrlhq-unsplash.jpg
+image: /img/erik-mclean-7wetgllrlhq-unsplash.jpg
 slug: about-page
 ---
 
