@@ -1,7 +1,8 @@
 ---
-template: "about-page"
-path: /about
+template: about-page
 title: About our values
+image: /assets/erik-mclean-7wetgllrlhq-unsplash.jpg
+slug: about-page
 ---
 
 ### Shade-grown coffee
