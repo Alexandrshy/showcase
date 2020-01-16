@@ -1,7 +1,7 @@
 ---
 template: about-page
 title: About our values
-image: /img/danielle-macinnes-iulgi9pwetu-unsplash.jpg
+image: /img/erik-mclean-7wetgllrlhq-unsplash.jpg
 ---
 ### Shade-grown coffee
 
