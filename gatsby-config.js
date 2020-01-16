@@ -29,13 +29,13 @@ module.exports = {
         name: "pages",
       },
     },
-    // {
-    //   resolve: "gatsby-source-filesystem",
-    //   options: {
-    //     path: `${__dirname}/src/img`,
-    //     name: "images",
-    //   },
-    // },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/content/img`,
+        name: "images",
+      },
+    },
     // Exposes several image processing functions built on the Sharp image processing library
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",

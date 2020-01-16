@@ -50,7 +50,7 @@ export const Layout: React.FC<PropsType> = ({
           <Switch />
         </React.Suspense>
       )}
-      <main>{children}</main>
+      <main className={style.main}>{children}</main>
       <Footer />
     </div>
   )

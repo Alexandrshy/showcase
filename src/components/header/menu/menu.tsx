@@ -4,6 +4,7 @@ import classNames from "classnames"
 
 import style from "./menu.module.css"
 
+import { isActiveLink } from "../../../utils/active-link"
 import useSiteMetadata from "../../../hooks/use-site-metadata"
 
 type PropsType = {
@@ -28,15 +29,7 @@ export const Menu: React.FC<PropsType> = ({ isMenuOpen, onToggleMenu }) => {
               index: number
             ) => (
               <li key={`${label}-${index}`} className={style.item}>
-                <Link
-                  to={path}
-                  className={style.link}
-                  activeClassName="isActive"
-                  activeStyle={{
-                    fontWeight: "var(--font-weight-medium)",
-                    color: "var(--menu-link-color-active)",
-                  }}
-                >
+                <Link getProps={isActiveLink} to={path} className={style.link}>
                   {label}
                 </Link>
               </li>

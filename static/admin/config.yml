@@ -3,8 +3,8 @@ backend:
   branch: master
   repo: Alexandrshy/personal
 
-media_folder: static/assets
-public_folder: assets
+media_folder: static/img
+public_folder: img
 
 collections:
   - name: posts
@@ -43,5 +43,5 @@ collections:
               default: "about-page",
             }
           - { label: "Title", name: "title", widget: "string" }
+          - { label: Image, name: image, widget: image }
           - { label: "Body", name: "body", widget: "markdown" }
-          - { label: "Slug", name: "slug", widget: "string" }

@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import { Layout } from "../components/layout/layout"
+import { Page } from "../components/page/page"
 
 type PropsType = {
   data: {
@@ -21,8 +22,9 @@ const AboutPage: React.FC<PropsType> = ({ data }) => {
   } = data
   return (
     <Layout>
-      <h1>{title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
+      <Page title={title}>
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+      </Page>
     </Layout>
   )
 }
