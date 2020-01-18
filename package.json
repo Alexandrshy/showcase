@@ -1,8 +1,9 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "showcase",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "It's just a showcase for my thoughts",
   "version": "0.1.0",
+  "author": "Alex Shulaev <alexandrshy@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -58,9 +59,13 @@
     "@types/react-dom": "^16.9.4",
     "@types/react-helmet": "^5.0.14",
     "@types/react-loadable": "^5.5.3",
+    "gatsby-image": "^2.0.23",
     "gatsby-plugin-netlify": "^2.1.30",
     "gatsby-plugin-react-helmet": "^3.1.18",
     "gatsby-plugin-sharp": "^2.3.10",
+    "gatsby-remark-copy-linked-files": "^2.1.36",
+    "gatsby-remark-images": "^3.1.42",
+    "gatsby-remark-relative-images": "^0.2.3",
     "gatsby-source-filesystem": "^2.1.43",
     "gatsby-transformer-sharp": "^2.3.9",
     "husky": "^3.1.0",
@@ -78,10 +83,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/Alexandrshy/showcase"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/Alexandrshy/showcase/issues"
   },
   "stylelint": {
     "extends": "stylelint-config-standard"
