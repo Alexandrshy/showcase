@@ -43,5 +43,6 @@ collections:
               default: "about-page",
             }
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
           - { label: Image, name: image, widget: image }
           - { label: "Body", name: "body", widget: "markdown" }

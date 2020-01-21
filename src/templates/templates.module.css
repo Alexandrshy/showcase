@@ -1,0 +1,29 @@
+.subtitle {
+  margin-bottom: 35px;
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+
+.image {
+  margin-bottom: 90px;
+}
+
+@media (max-width: 1980px) {
+  .subtitle {
+    margin-bottom: 35px;
+    font-size: 1.375rem;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 1400px) {
+  .subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .subtitle {
+    font-size: 1.125rem;
+  }
+}

@@ -10,7 +10,7 @@ import style from "./layout.module.css"
 
 type PropsType = {
   children: ReactNode
-  title?: string
+  title: string
   description?: string
   image?: string
 }

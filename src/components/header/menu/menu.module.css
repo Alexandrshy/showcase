@@ -1,3 +1,4 @@
+/* stylelint-disable selector-pseudo-class-no-unknown */
 .mask {
   display: none;
   position: fixed;
@@ -21,13 +22,13 @@
 }
 
 .item {
-  margin: 0 20px;
+  margin: 0 25px;
 }
 
 .link {
   display: inline-block;
   padding: 5px 10px;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: var(--font-weight-normal);
   white-space: nowrap;
   color: var(--menu-link-color);
@@ -46,6 +47,16 @@
 :global(.isActive).link {
   font-weight: var(--font-weight-medium);
   color: var(--menu-link-color-active);
+}
+
+@media (max-width: 1980px) {
+  .item {
+    margin: 0 20px;
+  }
+
+  .link {
+    font-size: 1.125rem;
+  }
 }
 
 @media (max-width: 992px) {
@@ -89,6 +100,7 @@
     position: relative;
     width: 100%;
     padding: 10px 20px;
+    font-size: 1rem;
   }
 
   :global(.is-open) .mask {
@@ -117,6 +129,7 @@
     0% {
       opacity: 0;
     }
+
     100% {
       opacity: 0.3;
     }
