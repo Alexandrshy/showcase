@@ -15,13 +15,13 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-react-helmet",
-    // {
-    //   resolve: "gatsby-source-filesystem",
-    //   options: {
-    //     path: `${__dirname}/static/img`,
-    //     name: "uploads",
-    //   },
-    // },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/static/img`,
+        name: "uploads",
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -36,10 +36,33 @@ module.exports = {
         name: "images",
       },
     },
-    // Exposes several image processing functions built on the Sharp image processing library
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    // Add a manifest file
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-relative-images",
+            options: {
+              name: "uploads",
+            },
+          },
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 2048,
+            },
+          },
+          {
+            resolve: "gatsby-remark-copy-linked-files",
+            options: {
+              destinationDir: "static",
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: "gatsby-plugin-manifest",
       options: {
