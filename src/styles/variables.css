@@ -1,5 +1,5 @@
 :root {
-  --black: #000000;
+  --black: #000;
   --black-pearl: #1c1c1c;
   --black-pearl-rgba: 28, 28, 28, 0.16;
   --athens-gray: #f9f9fa;
@@ -10,6 +10,8 @@
   --susty-gray: #979797;
   --mercury: #e1e1e1;
   --gallery: #ededed;
+  --ivory: rgba(255, 255, 255, 0.2);
+  --black-russian: rgba(0, 0, 0, 0.2);
 
   /* Font family */
   --default-font-style: normal;
@@ -34,7 +36,6 @@
   --cubic-bezier-menu: transform 0.3s var(--cubic-bezier),
     box-shadow 0.3s var(--cubic-bezier);
   --cubic-bezier-amimation-mask: 0.3s var(--cubic-bezier);
-
   --bg-color: var(--black-pearl);
   --font-color: var(--white);
   --social-link-color: var(--susty-gray);
@@ -44,6 +45,9 @@
   --box-shadow: var(--athens-gray-rgba);
   --menu-hamburger-color: var(--athens-gray);
   --switch-bg: var(--athens-gray);
+  --link: var(--susty-gray);
+  --link-border: var(--ivory);
+  --link-active: var(--mercury);
 }
 
 [data-theme="light"] {
@@ -56,4 +60,7 @@
   --box-shadow: var(--black-pearl-rgba);
   --menu-hamburger-color: var(--black-pearl);
   --switch-bg: var(--black-pearl);
+  --link: var(--boulder);
+  --link-border: var(--black-russian);
+  --link-active: var(--mine-shaft);
 }

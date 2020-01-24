@@ -45,7 +45,7 @@
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-tslint": "^0.0.2",
     "gatsby-plugin-typescript": "^2.1.20",
-    "gatsby-transformer-remark": "^2.6.39",
+    "gatsby-transformer-remark": "^2.6.48",
     "netlify-cms-app": "^2.9.7",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -65,12 +65,14 @@
     "gatsby-plugin-sharp": "^2.3.10",
     "gatsby-remark-copy-linked-files": "^2.1.36",
     "gatsby-remark-images": "^3.1.42",
+    "gatsby-remark-prismjs": "^3.3.30",
     "gatsby-remark-relative-images": "^0.2.3",
     "gatsby-source-filesystem": "^2.1.43",
     "gatsby-transformer-sharp": "^2.3.9",
     "husky": "^3.1.0",
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
+    "prismjs": "^1.19.0",
     "react-loadable": "^5.5.0",
     "stylelint": "^12.0.0",
     "stylelint-config-standard": "^19.0.0",
@@ -89,6 +91,9 @@
     "url": "https://github.com/Alexandrshy/showcase/issues"
   },
   "stylelint": {
-    "extends": "stylelint-config-standard"
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "declaration-colon-newline-after": null
+    }
   }
 }

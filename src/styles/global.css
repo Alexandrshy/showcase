@@ -6,9 +6,19 @@
 
 ul,
 ol {
-  padding: 0;
+  padding: 0 0 0 35px;
   margin: 0;
-  list-style: none;
+}
+
+ul:not(:last-child),
+ol:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+li {
+  padding-left: 20px;
+  font-size: 1.125rem;
+  line-height: 2;
 }
 
 body {
@@ -39,6 +49,15 @@ dd {
   margin: 0;
 }
 
+code {
+  font-size: 1rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  padding: 2px 5px 3px;
+  border-radius: 3px;
+  background: #2f2e2e;
+}
+
 h1 {
   margin-bottom: 45px;
   font-size: 3rem;
@@ -67,6 +86,24 @@ p:not(:last-child) {
 
 a {
   text-decoration: none;
+  color: var(--link);
+  border-bottom: 1px solid var(--link-border);
+  transition: all 0.3s;
+}
+
+a:active {
+  color: var(--font-color);
+}
+
+a:focus {
+  color: var(--link-active);
+  outline: var(--link-active) auto 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: var(--font-color);
+  }
 }
 
 img {
@@ -121,6 +158,10 @@ button:not(:disabled),
 }
 
 @media (max-width: 1200px) {
+  li {
+    font-size: 1rem;
+  }
+
   h3,
   h4 {
     font-size: 1.3rem;
