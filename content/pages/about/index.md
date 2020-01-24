@@ -39,7 +39,7 @@ We want to truly empower the communities that bring amazing coffee to you. Thatâ
 
 ![alt text](/img/112233.jpg "title text")
 
-```
+```javascript
 function getGrades() {
     var args = Array.prototype.slice.call(arguments, 1, 3);
     return args;
