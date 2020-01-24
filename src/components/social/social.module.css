@@ -1,0 +1,38 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.center {
+  justify-content: center;
+}
+
+.item {
+  padding: 0;
+  font-size: 0;
+}
+
+.item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.link {
+  display: inline-block;
+  padding: 5px;
+  font-size: 0;
+  color: var(--link);
+  box-shadow: none;
+}
+
+.link:focus {
+  outline: var(--link) auto 5px;
+}
+
+@media (max-width: 640px) {
+  .list {
+    justify-content: center;
+  }
+}
