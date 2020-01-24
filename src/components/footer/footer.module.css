@@ -1,0 +1,17 @@
+.footer {
+  padding: 60px 40px;
+  background-color: var(--footer-bg);
+  transition: var(--ease-in-out-background-color);
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 25px;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding: 50px 30px;
+  }
+}
