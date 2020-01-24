@@ -93,7 +93,8 @@
   "stylelint": {
     "extends": "stylelint-config-standard",
     "rules": {
-      "declaration-colon-newline-after": null
+      "declaration-colon-newline-after": null,
+      "selector-pseudo-class-no-unknown": null
     }
   }
 }
