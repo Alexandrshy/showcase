@@ -60,6 +60,40 @@ module.exports = {
               destinationDir: "static",
             },
           },
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {
+                sh: "shell",
+                es6: "javascript",
+                env: "bash",
+                mdx: "md",
+                ".json": "json",
+              },
+              showLineNumbers: false,
+              noInlineHighlight: false,
+              languageExtensions: [
+                {
+                  language: "superscript",
+                  extend: "javascript",
+                  definition: {
+                    superscript_types: /(SuperType)/,
+                  },
+                  insertBefore: {
+                    function: {
+                      superscript_keywords: /(superif|superelse)/,
+                    },
+                  },
+                },
+              ],
+              // By default the HTML entities <>&'" are escaped.
+              // Add additional HTML escapes by providing a mapping
+              // of HTML entities and their escape value IE: { '}': '&#123;' }
+              escapeEntities: {},
+            },
+          },
         ],
       },
     },
@@ -74,8 +108,6 @@ module.exports = {
         icon: `src/images/icon.png`,
       },
     },
-    // Parse all markdown files
-    "gatsby-transformer-remark",
     // Add typescript
     "gatsby-plugin-typescript",
     // Add google font
