@@ -2,10 +2,10 @@ import React from "react"
 import { Link } from "gatsby"
 import classNames from "classnames"
 
-import style from "./menu.module.css"
-
 import { isActiveLink } from "../../../utils/active-link"
 import useSiteMetadata from "../../../hooks/use-site-metadata"
+
+import style from "./menu.module.css"
 
 type PropsType = {
   isMenuOpen: boolean

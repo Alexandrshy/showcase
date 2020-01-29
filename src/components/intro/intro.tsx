@@ -1,5 +1,4 @@
 import React from "react"
-
 import { withPrefix } from "gatsby"
 
 import { Social } from "../social/social"

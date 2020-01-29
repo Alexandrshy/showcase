@@ -7,7 +7,7 @@ import { Layout } from "../components/layout/layout"
 import { Page } from "../components/page/page"
 import { Wrapper } from "../components/wrapper/wrapper"
 
-import style from "./templates.module.css"
+import style from "./about-page.module.css"
 
 type PropsType = {
   data: {

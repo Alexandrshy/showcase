@@ -10,7 +10,7 @@ import style from "./layout.module.css"
 
 type PropsType = {
   children: ReactNode
-  title: string
+  title?: string
   description?: string
   image?: string
 }
@@ -35,7 +35,7 @@ export const Layout: React.FC<PropsType> = ({
     <div className={style.layout}>
       <Helmet>
         <html lang="en" />
-        <title>{title}</title>
+        <title>{customTitle}</title>
         <meta name="description" content={customDescription} />
         <meta property="og:site_name" content={customTitle} />
         <meta property="og:image" content={customImage} />
