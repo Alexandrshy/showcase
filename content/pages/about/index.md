@@ -1,12 +1,13 @@
 ---
 template: about-page
-title: 'About our values '
+title: "About our values "
 subtitle: >-
   Coffee is a small tree or shrub that grows in the forest understory in its
   wild form, and traditionally was grown commercially under other trees that
   provided shade.
 image: /img/danielle-macinnes-iulgi9pwetu-unsplash.jpg
 ---
+
 ### Shade-grown coffee
 
 Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
@@ -29,9 +30,9 @@ We want to truly empower the communities that bring amazing coffee to you. Thatâ
 
 `We want to truly` empower the communities that bring amazing coffee to you. Thatâ€™s why we reinvest 20% of our profits into farms [Link](test.com)
 
-* Direct trade is a form o
-* We want to truly empower the communities
-* Sustainable agriculture is farming
+- Direct trade is a form o
+- We want to truly empower the communities
+- Sustainable agriculture is farming
 
 1. Direct trade is a form o
 2. We want to truly empower the communities
@@ -41,12 +42,12 @@ We want to truly empower the communities that bring amazing coffee to you. Thatâ
 
 ```javascript
 function getGrades() {
-    var args = Array.prototype.slice.call(arguments, 1, 3);
-    return args;
+  var args = Array.prototype.slice.call(arguments, 1, 3)
+  return args
 }
 
 // Let's output this!
-console.log(getGrades(90, 100, 75, 40, 89, 95));
+console.log(getGrades(90, 100, 75, 40, 89, 95))
 ```
 
 > Test empower the communities that bring amazing coffee to you. Thatâ€™s why we reinvest 20% of our profits
