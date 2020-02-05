@@ -9,7 +9,7 @@ public_folder: img
 collections:
   - name: posts
     label: Posts
-    folder: content/posts
+    folder: content/pages/posts
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     preview_path: "posts/{{fields.slug}}"
@@ -32,6 +32,20 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
+      - file: "content/pages/index.md"
+        label: "Home"
+        name: "index"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "index-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
+
       - file: "content/pages/about/index.md"
         label: "About"
         name: "about"
@@ -44,5 +58,5 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Subtitle", name: "subtitle", widget: "string" }
-          - { label: Image, name: image, widget: image }
+          - { label: "Image", name: "image", widget: "image" }
           - { label: "Body", name: "body", widget: "markdown" }
