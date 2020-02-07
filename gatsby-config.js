@@ -8,6 +8,7 @@ module.exports = {
   siteMetadata: {
     title: siteConfig.title,
     url: siteConfig.url,
+    name: siteConfig.name,
     description: siteConfig.description,
     menu: siteConfig.menu,
     author: siteConfig.author,

@@ -10,11 +10,6 @@ ol {
   margin: 0;
 }
 
-ul:not(:last-child),
-ol:not(:last-child) {
-  margin-bottom: 35px;
-}
-
 li {
   padding-left: 20px;
   font-size: 1.125rem;
@@ -39,8 +34,8 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
@@ -48,6 +43,11 @@ blockquote,
 dl,
 dd {
   margin: 0;
+}
+
+ul:not(:last-child),
+ol:not(:last-child) {
+  margin-bottom: 35px;
 }
 
 h1,
@@ -93,7 +93,8 @@ a {
 }
 
 a:focus,
-a:active {
+a:active,
+.gatsby-resp-image-link {
   color: var(--link);
   box-shadow: none;
   outline: none;

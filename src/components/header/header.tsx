@@ -10,14 +10,16 @@ export const Header: React.FC = () => {
 
   return (
     <header className={style.header}>
-      <Hamburger
-        onToggleMenu={() => setIsMenuOpen(!isMenuOpen)}
-        isMenuOpen={isMenuOpen}
-      />
-      <Menu
-        onToggleMenu={() => setIsMenuOpen(!isMenuOpen)}
-        isMenuOpen={isMenuOpen}
-      />
+      <div className={style.wrapper}>
+        <Hamburger
+          onToggleMenu={() => setIsMenuOpen(!isMenuOpen)}
+          isMenuOpen={isMenuOpen}
+        />
+        <Menu
+          onToggleMenu={() => setIsMenuOpen(!isMenuOpen)}
+          isMenuOpen={isMenuOpen}
+        />
+      </div>
     </header>
   )
 }

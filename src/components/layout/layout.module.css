@@ -6,12 +6,12 @@
 }
 
 .main {
-  padding: 90px 0 130px;
+  padding: 180px 0 130px;
 }
 
 @media (max-width: 1200px) {
   .main {
-    padding: 70px 0 100px;
+    padding: 160px 0 100px;
   }
 }
 

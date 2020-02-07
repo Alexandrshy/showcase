@@ -1,0 +1,77 @@
+.logo {
+  padding: 5px;
+  margin: 0 -5px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  background-color: var(--link);
+  background-image: linear-gradient(
+    45deg,
+    var(--link) 16.666%,
+    var(--selective-yellow) 16.666%,
+    var(--selective-yellow) 33.333%,
+    var(--cerulean) 33.333%,
+    var(--cerulean) 50%,
+    var(--vermilion) 50%,
+    var(--vermilion) 66.666%,
+    var(--caribbean-green) 66.666%,
+    var(--caribbean-green) 83.333%,
+    var(--heliotrope) 83.333%
+  );
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+  box-shadow: none;
+}
+
+.logo:focus {
+  outline: var(--link) auto 5px;
+}
+
+@media (hover: hover) {
+  .logo:hover {
+    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+  }
+}
+
+@keyframes rainbow-text-simple-animation-rev {
+  0% {
+    background-size: 700%;
+  }
+
+  40% {
+    background-size: 700%;
+  }
+
+  100% {
+    background-size: 100%;
+  }
+}
+
+@keyframes rainbow-text-simple-animation {
+  0% {
+    background-size: 100%;
+  }
+
+  80% {
+    background-size: 700%;
+  }
+
+  100% {
+    background-size: 700%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .logo {
+    font-size: 1.65rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .logo {
+    display: inline-block;
+    padding: 15px 25px;
+  }
+}

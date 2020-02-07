@@ -6,6 +6,7 @@ export default function useSiteMetadata() {
       site {
         siteMetadata {
           url
+          name
           title
           description
           menu {

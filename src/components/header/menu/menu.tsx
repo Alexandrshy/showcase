@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import classNames from "classnames"
 
+import { Logo } from "../logo/logo"
 import { isActiveLink } from "../../../utils/active-link"
 import useSiteMetadata from "../../../hooks/use-site-metadata"
 
@@ -19,6 +20,7 @@ export const Menu: React.FC<PropsType> = ({ isMenuOpen, onToggleMenu }) => {
     <div className={classNames({ ["is-open"]: isMenuOpen })}>
       <div className={style.mask} onClick={onToggleMenu} />
       <nav className={style.nav} aria-labelledby="mainmenulabel">
+        <Logo />
         <h4 id="mainmenulabel" className="visuallyhidden">
           Main menu
         </h4>

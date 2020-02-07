@@ -1,29 +1,23 @@
 module.exports = {
   url: "https://alexandrshy.netlify.com",
+  name: "Showcase",
   title: "Blog by Alexandr Shulaev",
   description: "Personal website and blog",
   menu: [
-    {
-      label: "Home",
-      path: "/",
-    },
     {
       label: "Blog",
       path: "/blog",
     },
     {
-      label: "About me",
+      label: "About",
       path: "/about",
-    },
-    {
-      label: "Contact me",
-      path: "/contact",
     },
     {
       label: "Resume",
       path: "/resume",
     },
   ],
+  postsPerPage: 5,
   author: {
     name: "Alexandr Shulaev",
     photo: "/intro-photo.png",
