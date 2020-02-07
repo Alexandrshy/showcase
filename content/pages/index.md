@@ -1,9 +1,10 @@
 ---
 template: index-page
-title: "About our values "
+title: 'About our values '
 subtitle: >-
   Coffee is a small tree or shrub that grows in the forest understory in its
   wild form, and traditionally was grown commercially under other trees that
   provided shade.
-image: /img/danielle-macinnes-iulgi9pwetu-unsplash.jpg
+image: /img/intro-photo.png
 ---
+
