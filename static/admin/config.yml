@@ -33,7 +33,7 @@ collections:
     label: "Pages"
     files:
       - file: "content/pages/index.md"
-        label: "Home"
+        label: "Index"
         name: "index"
         fields:
           - {
