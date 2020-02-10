@@ -282,7 +282,7 @@ git commit -m "Added ESLint and Prettier"
 git push
 ```
 
-You can see the whole result of the work in [repository] (https://github.com/Alexandrshy/react-ant). The current state of the project is the master branch, and for each individual article, I'll create a separate branch.
+You can see the whole result of the work in [repository](https://github.com/Alexandrshy/react-ant). The current state of the project is the master branch, and for each individual article, I'll create a separate branch.
 
 We'll stop here, thank you all for your attention, see you in the next parts 🖖
 
