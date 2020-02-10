@@ -30,7 +30,7 @@ This is what the new repository creation window looks like. You need to come up 
 
 Now let’s clone the new repository. GitHub offers to clone using SSH or HTTPS. Now I use the second method.
 
-```cmd
+```
 git clone https://github.com/Alexandrshy/react-ant.git
 ``` 
 
