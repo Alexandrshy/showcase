@@ -20,7 +20,6 @@ module.exports = {
   postsPerPage: 5,
   author: {
     name: "Alexandr Shulaev",
-    photo: "/intro-photo.png",
     contacts: {
       email: "alexandrshy@gmail.com",
       telegram: "@alexandrshy",
