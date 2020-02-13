@@ -2,6 +2,8 @@
 
 const path = require("path")
 
+const createPostsPages = require("./pagination/create-posts-pages")
+
 const createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
@@ -35,7 +37,11 @@ const createPages = async ({ graphql, actions }) => {
     const { template } = edge.node.frontmatter
     const { slug } = edge.node.fields
     if (template === "post") {
-      //   TODO: need to add
+      createPage({
+        path: edge.node.fields.slug,
+        component: path.resolve("src/templates/post-template.tsx"),
+        context: { slug: edge.node.fields.slug },
+      })
     } else {
       createPage({
         path: slug,
@@ -46,6 +52,8 @@ const createPages = async ({ graphql, actions }) => {
       })
     }
   })
+
+  await createPostsPages(graphql, actions)
 }
 
 module.exports = createPages
