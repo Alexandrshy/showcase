@@ -11,11 +11,13 @@ tags:
   - javascript
   - webdev
 ---
+
 In this series of articles, we will go through the full cycle of building an application and create a small library of components
 
 I’m writing this series of articles for Junior Frontend developers who want to create their first JavaScript project and show it to the world 🙂 For this project, I chose the basic stack that can be found in most modern projects. So that you aren’t bored, you can always add something of your own, so I recommend you write your own implementation and publish the result of your work on GitHub while reading the article. Surely you have a dozen technologies, libraries, frameworks, tools that you want to try, and the development of such a pet-project is a great option to use something new 👍
 
 ## Acquaintance to the project
+
 The main idea of the project that we'll implement is to write a library of components in React with TypeScript, document and visualize it with Storybook and publish it as a package in npm. We will also configure linters, add tests for Jest, and automate the testing process using Travis CI. Perhaps something else will be added during the work, don’t hesitate to write comments and propose your solution 😉
 
 The article will be divided into several parts so that we can consider in detail each stage of the project.
@@ -32,11 +34,11 @@ Now let’s clone the new repository. GitHub offers to clone using SSH or HTTPS.
 
 ```
 git clone https://github.com/Alexandrshy/react-ant.git
-``` 
+```
 
 If you see a message about successful unpacking, then the cloning was successful.
 
-We also need to cache the login, if this isn’t done in the next attempts to do `git fetch`, `git clone`, `git push` you will need to enter the username and password ([more about this](https://help.github.com/en/github/using-git/which-remote-url-should-i-use)) 
+We also need to cache the login, if this isn’t done in the next attempts to do `git fetch`, `git clone`, `git push` you will need to enter the username and password ([more about this](https://help.github.com/en/github/using-git/which-remote-url-should-i-use))
 
 ```cmd
 git config --global credential.helper osxkeychain
@@ -89,7 +91,7 @@ Make small changes:
   "license": "MIT",
 ```
 
-I think everything is clear here, and for a more detailed configuration, you may need  [this documentation](https://docs.npmjs.com/files/package.json).
+I think everything is clear here, and for a more detailed configuration, you may need [this documentation](https://docs.npmjs.com/files/package.json).
 
 We will be returning to the `package.json` configuration in the future. But now it’s time to make the first commit.
 
@@ -131,7 +133,7 @@ You can configure ESLint manually or use a ready-made set of rules. I like the s
 ? What format do you want your config file to be in? JavaScript
 ```
 
-Since we’re planning to use TypeScript I immediately selected this item in the dialog box, which causes me to get the error `Cannot find module 'typescript'`.  And it’s logical because we haven’t installed TypeScript yet, let’s fix it:
+Since we’re planning to use TypeScript I immediately selected this item in the dialog box, which causes me to get the error `Cannot find module 'typescript'`. And it’s logical because we haven’t installed TypeScript yet, let’s fix it:
 
 ```cmd
 npm i typescript
@@ -144,12 +146,9 @@ To test ESLint, let’s create `index.ts` file and save the following code there
 
 ```javascript
 var a
-console
-    .log('a = ' + a)
- 
- 
-    a = 100
+console.log("a = " + a)
 
+a = 100
 ```
 
 And run the test:
@@ -167,12 +166,10 @@ Great, the five line code has seven errors and one warning 👍 And immediately 
 And we get code that has only one warning about using console.log:
 
 ```javascript
-let a;
-console
-  .log(`a = ${a}`);
- 
- 
-a = 100; 
+let a
+console.log(`a = ${a}`)
+
+a = 100
 ```
 
 As you can see the automatic fix working, the errors have been fixed, but the code still looks pretty ugly. For formatting, the code, the best tool, in my opinion, is [Prettier](https://prettier.io/). Let’s add it to our project:
@@ -190,6 +187,7 @@ We have installed the main package and CLI to format the files. For ease of use 
 },
 
 ```
+
 I added the `--write` option to overwrite all formatted files. Check the results:
 
 ```cmd
@@ -199,10 +197,10 @@ npm run format
 `index.ts`
 
 ```javascript
-let a;
-console.log(`a = ${a}`);
- 
-a = 100;
+let a
+console.log(`a = ${a}`)
+
+a = 100
 ```
 
 Everything works fine. You can also install plugins for your IDE to format files using keyboard shortcuts or when saving changes. Now let's add a script for ESLint:
@@ -255,12 +253,10 @@ Now before each commit, we will run ESLint and Prettier check for all modified j
 Let's experiment with the `index.ts` file again:
 
 ```javascript
-var a;
-console
-  .log(`a = ${a}`);
- 
- 
-a = 100;
+var a
+console.log(`a = ${a}`)
+
+a = 100
 ```
 
 Add this file to the commit:
@@ -288,7 +284,7 @@ We'll stop here, thank you all for your attention, see you in the next parts �
 
 ### Links
 
-- [npm  documentation](https://docs.npmjs.com/)
+- [npm documentation](https://docs.npmjs.com/)
 - [ESLint official website](https://eslint.org/)
 - [Prettier-eslint](https://github.com/prettier/prettier-eslint)
 - [Prettier-eslint-cli](https://github.com/prettier/prettier-eslint-cli)
