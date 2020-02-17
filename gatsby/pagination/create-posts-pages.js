@@ -20,14 +20,14 @@ module.exports = async (graphql, actions) => {
 
   for (let i = 0; i < numPages; i += 1) {
     createPage({
-      path: i === 0 ? "/blog" : `/blog/${i}`,
-      component: path.resolve("./src/templates/blog-page.tsx"),
+      path: i === 0 ? "/posts" : `/posts/${i}`,
+      component: path.resolve("./src/templates/posts-page.tsx"),
       context: {
         currentPage: i,
         postsLimit: postsPerPage,
         postsOffset: i * postsPerPage,
-        prevPagePath: i <= 1 ? "/" : `/blog/${i - 1}`,
-        nextPagePath: `/blog/${i + 1}`,
+        prevPagePath: i <= 1 ? "/posts" : `/posts/${i - 1}`,
+        nextPagePath: `/posts/${i + 1}`,
         hasPrevPage: i !== 0,
         hasNextPage: i !== numPages - 1,
       },
