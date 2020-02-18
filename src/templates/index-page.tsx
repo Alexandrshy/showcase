@@ -10,7 +10,7 @@ type PropsType = {
   data: {
     markdownRemark: {
       html: string
-      frontmatter: { title: string; subtitle: string; image: any }
+      frontmatter: { title: string; subtitle: string }
     }
   }
 }
@@ -18,14 +18,14 @@ type PropsType = {
 const MainPage: React.FC<PropsType> = ({ data }) => {
   const {
     markdownRemark: {
-      frontmatter: { title, subtitle, image },
+      frontmatter: { title, subtitle },
     },
   } = data
 
   return (
     <Layout>
-      <Intro title={title} subtitle={subtitle} image={image} />
       <Wrapper>
+        <Intro title={title} subtitle={subtitle} />
         <LatestPosts />
       </Wrapper>
     </Layout>
@@ -40,13 +40,6 @@ export const mainPageQuery = graphql`
       frontmatter {
         title
         subtitle
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
       }
     }
   }
