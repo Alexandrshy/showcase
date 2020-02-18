@@ -15,7 +15,6 @@ export default function useSiteMetadata() {
           }
           author {
             name
-            photo
             contacts {
               email
               telegram
