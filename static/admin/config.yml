@@ -42,7 +42,6 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Subtitle", name: "subtitle", widget: "string" }
-          - { label: "Image", name: "image", widget: "image" }
 
       - file: "content/pages/about/index.md"
         label: "About"
