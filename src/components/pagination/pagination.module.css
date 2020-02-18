@@ -1,0 +1,47 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 100px;
+}
+
+.wrapper:after {
+  content: "/";
+  position: absolute;
+  top: 0;
+  right: 78px;
+  font-size: 1.5rem;
+  color: var(--link);
+}
+
+.link {
+  font-size: 1.5rem;
+  box-shadow: none;
+}
+
+.prev {
+  margin-right: 60px;
+}
+
+.inactive {
+  cursor: default;
+  pointer-events: none;
+  color: var(--pagination-inactive);
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    margin-top: 80px;
+  }
+
+  .link {
+    font-size: 1.35rem;
+    box-shadow: none;
+  }
+
+  .wrapper:after {
+    right: 75px;
+    font-size: 1.35rem;
+  }
+}
