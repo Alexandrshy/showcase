@@ -29,7 +29,7 @@ const AboutPage: React.FC<PropsType> = ({ data }) => {
     <Layout title="About me">
       <Page>
         <Wrapper width="increased">
-          <Title title={title} />
+          <Title title={title} inline={true} />
           {subtitle && <h2 className={style.subtitle}>{subtitle}</h2>}
           <Img fluid={image.childImageSharp.fluid} className={style.image} />
         </Wrapper>
