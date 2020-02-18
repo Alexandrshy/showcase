@@ -1,19 +1,36 @@
 .title {
-  margin-bottom: 35px;
+  margin-bottom: 75px;
   font-size: 3rem;
   font-weight: 700;
+  line-height: 1.55;
+}
+
+.title.inline {
+  margin-bottom: 25px;
 }
 
 @media (max-width: 1980px) {
   .title {
-    margin-bottom: 20px;
-    font-size: 2.25rem;
+    margin-bottom: 55px;
   }
 }
 
 @media (max-width: 1400px) {
   .title {
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .title {
+    margin-bottom: 30px;
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
     font-size: 2rem;
   }
 }

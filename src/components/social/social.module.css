@@ -1,8 +1,6 @@
 .list {
-  display: flex;
-  flex-wrap: wrap;
   padding: 0;
-  margin: 0;
+  margin: 0 -7px;
   list-style: none;
 }
 
@@ -11,28 +9,20 @@
 }
 
 .item {
+  display: inline-block;
   padding: 0;
-  font-size: 0;
+  line-height: 1.45;
 }
 
-.item:not(:last-child) {
-  margin-right: 25px;
+.item:not(:last-child):after {
+  content: "/";
+  font-size: 0.75rem;
 }
 
 .link {
-  display: inline-block;
-  padding: 5px;
-  font-size: 0;
-  color: var(--link);
-  box-shadow: none;
+  margin: 0 7px;
 }
 
 .link:focus {
   outline: var(--link) auto 5px;
-}
-
-@media (max-width: 640px) {
-  .list {
-    justify-content: center;
-  }
 }
