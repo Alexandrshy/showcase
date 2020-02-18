@@ -5,8 +5,8 @@ module.exports = {
   description: "Personal website and blog",
   menu: [
     {
-      label: "Blog",
-      path: "/blog",
+      label: "Posts",
+      path: "/posts",
     },
     {
       label: "About",
@@ -30,20 +30,20 @@ module.exports = {
   },
   social: [
     {
-      label: "telegram",
+      label: "LinkedIn",
+      path: "https://www.linkedin.com/in/alexandrshy",
+    },
+    {
+      label: "Telegram",
       path: "https://t.me/alexandrshy",
     },
     {
-      label: "twitter",
-      path: "https://twitter.com/alexandrshy",
-    },
-    {
-      label: "github",
+      label: "GitHub",
       path: "https://github.com/Alexandrshy",
     },
     {
-      label: "linkedin",
-      path: "https://www.linkedin.com/in/alexandrshy",
+      label: "Twitter",
+      path: "https://twitter.com/alexandrshy",
     },
   ],
 }
