@@ -1,6 +1,6 @@
 pre[class*="language-"],
 code[class*="language-"] {
-  color: var(--mine-shaft);
+  color: var(--white);
   font-size: 1rem;
   text-shadow: none;
   font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;

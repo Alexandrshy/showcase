@@ -55,8 +55,12 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  line-height: 1.65;
+}
+
 p {
+  font-size: 1.125rem;
   line-height: 2;
 }
 
@@ -66,19 +70,15 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 45px;
+  margin: 45px 0;
   font-size: 1.625rem;
 }
 
 h3,
 h4 {
-  margin-bottom: 15px;
+  margin: 15px 0;
   font-size: 1.5rem;
   font-weight: 500;
-}
-
-p {
-  font-size: 1.125rem;
 }
 
 p:not(:last-child) {
@@ -93,11 +93,14 @@ a {
 }
 
 a:focus,
-a:active,
-.gatsby-resp-image-link {
+a:active {
   color: var(--link);
   box-shadow: none;
-  outline: none;
+  outline: var(--menu-link-color-active) auto 5px;
+}
+
+.gatsby-resp-image-link {
+  box-shadow: none;
 }
 
 @media (hover: hover) {
@@ -108,8 +111,9 @@ a:active,
 }
 
 img {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
+  margin: auto;
 }
 
 input,
@@ -172,7 +176,13 @@ pre code {
 }
 
 .gatsby-highlight {
-  margin-bottom: 35px;
+  margin: 0 -40px 35px;
+}
+
+figcaption {
+  font-style: italic;
+  text-align: center;
+  margin: -10px 0 35px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -201,6 +211,10 @@ pre code {
     font-size: 1rem;
   }
 
+  h2 {
+    margin: 35px 0;
+  }
+
   h3,
   h4 {
     font-size: 1.3rem;
@@ -212,6 +226,10 @@ pre code {
 
   p:not(:last-child) {
     margin-bottom: 25px;
+  }
+
+  figcaption {
+    margin: -10px 0 25px;
   }
 }
 
@@ -242,6 +260,16 @@ pre code {
   }
 
   pre code {
-    padding: 10px;
+    padding: 14px;
+  }
+
+  .gatsby-highlight {
+    margin: 0 -30px 35px;
+  }
+}
+
+@media (max-width: 750px) {
+  pre {
+    border-radius: 0;
   }
 }

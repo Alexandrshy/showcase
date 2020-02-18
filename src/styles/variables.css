@@ -2,7 +2,7 @@
   --black: #000;
   --black-pearl: #1c1c1c;
   --athens-gray: #f9f9fa;
-  --mine-shaft: #292929;
+  --mine-shaft: #373535;
   --white: #ecedf3;
   --boulder: #757575;
   --susty-gray: #979797;
@@ -55,7 +55,9 @@
   --switch-bg: var(--athens-gray);
   --link: var(--viola);
   --link-border: var(--viola);
+  --post-border: var(--mine-shaft);
   --footer-bg: var(--mine-shaft);
+  --pagination-inactive: var(--susty-gray);
 }
 
 [data-theme="light"] {
@@ -70,5 +72,7 @@
   --switch-bg: var(--black-pearl);
   --link: var(--cannon-pink);
   --link-border: var(--cannon-pink);
+  --post-border: var(--gallery);
   --footer-bg: var(--gallery);
+  --pagination-inactive: var(--boulder);
 }
