@@ -1,17 +1,48 @@
 .footer {
-  padding: 60px 40px;
+  padding: 60px 0;
   background-color: var(--footer-bg);
   transition: var(--ease-in-out-background-color);
-  text-align: center;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.author,
+.social {
+  width: 100%;
+  max-width: 230px;
+}
+
+.social {
+  text-align: right;
 }
 
 .title {
-  margin-bottom: 25px;
-  font-size: 1.25rem;
+  display: inline-block;
+  margin: 0 0 8px;
+  font-size: 1rem;
 }
 
-@media (max-width: 640px) {
+.text {
+  line-height: 1.45;
+}
+
+@media (max-width: 768px) {
   .footer {
-    padding: 50px 30px;
+    padding: 50px 0;
+  }
+
+  .author,
+  .social {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .author {
+    margin-bottom: 30px;
   }
 }
