@@ -64,7 +64,7 @@ const NotFoundTemplate: React.FC<PropsType> = ({ data }) => (
 export default NotFoundTemplate
 
 export const query = graphql`
-  query {
+  query NotFoundPage {
     fileName: file(relativePath: { eq: "not-found.png" }) {
       childImageSharp {
         fluid(maxWidth: 600, maxHeight: 600) {
