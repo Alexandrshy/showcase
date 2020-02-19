@@ -16,25 +16,29 @@ export const Pagination: React.FC<PropsType> = ({
   nextPagePath,
   hasPrevPage,
   hasNextPage,
-}) => (
-  <nav className={style.wrapper}>
-    <Link
-      rel="prev"
-      to={prevPagePath}
-      className={classNames(style.link, style.prev, {
-        [style.inactive]: !hasPrevPage,
-      })}
-    >
-      Prev
-    </Link>
-    <Link
-      rel="next"
-      to={nextPagePath}
-      className={classNames(style.link, style.next, {
-        [style.inactive]: !hasNextPage,
-      })}
-    >
-      Next
-    </Link>
-  </nav>
-)
+}) => {
+  if (!hasPrevPage && !hasNextPage) return null
+
+  return (
+    <nav className={style.wrapper}>
+      <Link
+        rel="prev"
+        to={prevPagePath}
+        className={classNames(style.link, style.prev, {
+          [style.inactive]: !hasPrevPage,
+        })}
+      >
+        Prev
+      </Link>
+      <Link
+        rel="next"
+        to={nextPagePath}
+        className={classNames(style.link, style.next, {
+          [style.inactive]: !hasNextPage,
+        })}
+      >
+        Next
+      </Link>
+    </nav>
+  )
+}
