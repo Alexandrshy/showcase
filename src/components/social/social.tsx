@@ -13,7 +13,12 @@ export const Social: React.FC = () => {
       {social.map(
         ({ label, path }: { label: string; path: string }, index: number) => (
           <li key={`${label}-${index}`} className={style.item}>
-            <a href={path} className={style.link} target="_blank">
+            <a
+              href={path}
+              className={style.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {label}
             </a>
           </li>
