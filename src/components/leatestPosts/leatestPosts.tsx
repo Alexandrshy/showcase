@@ -24,7 +24,7 @@ const LatestPosts: React.FC<PropsType> = ({
   data: {
     allMarkdownRemark: { edges = [] },
   },
-}) => edges.length > 0 && <Posts list={edges} title="Last Posts" />
+}) => edges.length > 0 && <Posts list={edges} title="My last posts" />
 
 export default () => (
   <StaticQuery
