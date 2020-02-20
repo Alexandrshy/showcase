@@ -28,10 +28,10 @@ const AboutPage: React.FC<PropsType> = ({ data }) => {
   return (
     <Layout title="About me">
       <Page>
-        <Wrapper width="increased">
+        <Wrapper className={style.wrapper} width="increased">
           <Title title={title} inline={true} />
-          {subtitle && <h2 className={style.subtitle}>{subtitle}</h2>}
-          <Img fluid={image.childImageSharp.fluid} className={style.image} />
+          {subtitle && <h3 className={style.subtitle}>{subtitle}</h3>}
+          <Img fluid={image.childImageSharp.fluid} />
         </Wrapper>
         <Wrapper>
           <div dangerouslySetInnerHTML={{ __html: html }} />
