@@ -41,7 +41,7 @@ collections:
               default: "index-page",
             }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Subtitle", name: "subtitle", widget: "markdown" }
+          - { label: "Subtitle", name: "body", widget: "markdown" }
 
       - file: "content/pages/about/index.md"
         label: "About"
