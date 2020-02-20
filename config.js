@@ -30,20 +30,28 @@ module.exports = {
   },
   social: [
     {
+      label: "GitHub",
+      path: "https://github.com/Alexandrshy",
+    },
+    {
       label: "LinkedIn",
       path: "https://www.linkedin.com/in/alexandrshy",
+    },
+    {
+      label: "Twitter",
+      path: "https://twitter.com/alexandrshy",
     },
     {
       label: "Telegram",
       path: "https://t.me/alexandrshy",
     },
     {
-      label: "GitHub",
-      path: "https://github.com/Alexandrshy",
+      label: "Habr",
+      path: "https://habr.com/ru/users/alexandrshy",
     },
     {
-      label: "Twitter",
-      path: "https://twitter.com/alexandrshy",
+      label: "Dev.to",
+      path: "https://dev.to/alexandrshy",
     },
   ],
 }
