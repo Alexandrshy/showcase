@@ -1,0 +1,30 @@
+.line {
+  height: 1px;
+  margin: 35px 0;
+  background: var(--post-border);
+  border: none;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.translation {
+  padding: 30px;
+  margin: 35px 0;
+  overflow: auto;
+  background: var(--mine-shaft);
+  border-radius: 8px;
+  border: 1px solid var(--link-border);
+}
+
+@media (max-width: 1200px) {
+  .line {
+    margin: 25px 0;
+  }
+}
