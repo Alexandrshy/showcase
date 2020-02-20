@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { Tags } from "../../leatestPosts/tags/tags"
+import { Tags } from "../../tags/tags"
 import { formatDate } from "../../../utils/format-date"
 
 import style from "./post.module.css"
