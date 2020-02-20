@@ -10,6 +10,11 @@ type PropsType = {
 export const Intro: React.FC<PropsType> = ({ title, subtitle }) => (
   <div className={style.info}>
     {title && <h2 className={style.title}>{title}</h2>}
-    {subtitle && <p className={style.subtitle}>{subtitle}</p>}
+    {subtitle && (
+      <div
+        className={style.subtitle}
+        dangerouslySetInnerHTML={{ __html: subtitle }}
+      />
+    )}
   </div>
 )
