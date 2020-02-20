@@ -1,6 +1,6 @@
 ---
 template: index-page
-title: 'Hi, I''m Alex. I’m a front developer who loves to develop beautiful things.'
+title: 'Hi, I''m Alex. I’m a Front Developer who loves to develop beautiful things'
 subtitle: >-
   I'm translating your ideas into user-friendly interfaces. I really love it! My
   work is part of my hobby which I do all my free time. I can endlessly discuss
