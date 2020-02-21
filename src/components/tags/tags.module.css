@@ -13,3 +13,20 @@
 .tagItem:last-child {
   margin-right: 0;
 }
+
+.link {
+  color: var(--tag-link-color);
+  transition: var(--ease-in-out-color-small);
+  box-shadow: none;
+}
+
+@media (hover: hover) {
+  .link:hover {
+    color: var(--tag-link-color-active);
+  }
+}
+
+.link:focus {
+  color: var(--tag-link-color-active);
+  outline: var(--tag-link-color-active) auto 5px;
+}

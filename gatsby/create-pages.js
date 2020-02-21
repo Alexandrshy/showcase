@@ -3,6 +3,7 @@
 const path = require("path")
 
 const createPostsPages = require("./pagination/create-posts-pages")
+const createTagsPages = require("./pagination/create-tags-pages")
 
 const createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
@@ -10,6 +11,11 @@ const createPages = async ({ graphql, actions }) => {
   createPage({
     path: "/404",
     component: path.resolve("./src/templates/not-found-template.tsx"),
+  })
+
+  createPage({
+    path: "/tags",
+    component: path.resolve("./src/templates/tags-template.tsx"),
   })
 
   const result = await graphql(`
@@ -54,6 +60,7 @@ const createPages = async ({ graphql, actions }) => {
   })
 
   await createPostsPages(graphql, actions)
+  await createTagsPages(graphql, actions)
 }
 
 module.exports = createPages
