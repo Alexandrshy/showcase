@@ -12,6 +12,7 @@ ol {
 
 li {
   padding-left: 20px;
+  margin-bottom: 10px;
   font-size: 1.125rem;
   line-height: 2;
 }
@@ -36,7 +37,6 @@ h4,
 p,
 ul,
 ol,
-li,
 figure,
 figcaption,
 blockquote,
