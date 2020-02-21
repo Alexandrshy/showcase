@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import classNames from "classnames"
 
 import { Logo } from "../logo/logo"
-import { isActiveLink } from "../../../utils/active-link"
 import useSiteMetadata from "../../../hooks/use-site-metadata"
 
 import style from "./menu.module.css"
@@ -31,7 +30,12 @@ export const Menu: React.FC<PropsType> = ({ isMenuOpen, onToggleMenu }) => {
               index: number
             ) => (
               <li key={`${label}-${index}`} className={style.item}>
-                <Link getProps={isActiveLink} to={path} className={style.link}>
+                <Link
+                  partiallyActive={true}
+                  activeStyle={{ color: "var(--menu-link-color-active)" }}
+                  to={path}
+                  className={style.link}
+                >
                   {label}
                 </Link>
               </li>
