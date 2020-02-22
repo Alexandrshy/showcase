@@ -17,16 +17,6 @@ const onCreateNode = ({ node, actions, getNode }) => {
         name: "slug",
         value: `/${dirname}/${slug}/${langPath}`,
       })
-      createNodeField({
-        node,
-        name: "langKey",
-        value: lang ? lang : "",
-      })
-      createNodeField({
-        node,
-        name: "hasTranslation",
-        value: hasTranslation,
-      })
     } else {
       const value = createFilePath({ node, getNode })
       createNodeField({
@@ -35,6 +25,16 @@ const onCreateNode = ({ node, actions, getNode }) => {
         value,
       })
     }
+    createNodeField({
+      node,
+      name: "langKey",
+      value: lang ? lang : "",
+    })
+    createNodeField({
+      node,
+      name: "hasTranslation",
+      value: typeof hasTranslation === "boolean" ? hasTranslation : "",
+    })
   }
 }
 
