@@ -23,6 +23,11 @@ const onCreateNode = ({ node, actions, getNode }) => {
         value,
       })
     }
+    createNodeField({
+      node,
+      name: "langKey",
+      value: node.frontmatter.lang ? node.frontmatter.lang : "",
+    })
   }
 }
 
