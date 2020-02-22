@@ -8,7 +8,7 @@ const onCreateNode = ({ node, actions, getNode }) => {
   fmImagesToRelative(node)
 
   if (node.internal.type === "MarkdownRemark") {
-    const { slug, lang, hasTranslation = "test" } = node.frontmatter
+    const { slug, lang, hasTranslation } = node.frontmatter
     if (typeof slug !== "undefined") {
       const dirname = getNode(node.parent).relativeDirectory
       const langPath = lang && lang !== "en" ? lang : ""
@@ -33,7 +33,7 @@ const onCreateNode = ({ node, actions, getNode }) => {
     createNodeField({
       node,
       name: "hasTranslation",
-      value: typeof hasTranslation === "boolean" ? hasTranslation : "",
+      value: Boolean(hasTranslation),
     })
   }
 }
