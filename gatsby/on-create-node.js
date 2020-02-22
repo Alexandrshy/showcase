@@ -8,7 +8,7 @@ const onCreateNode = ({ node, actions, getNode }) => {
   fmImagesToRelative(node)
 
   if (node.internal.type === "MarkdownRemark") {
-    const { slug, lang, hasTranslation } = node.frontmatter
+    const { slug, lang, hasTranslation = "test" } = node.frontmatter
     if (typeof slug !== "undefined") {
       const dirname = getNode(node.parent).relativeDirectory
       const langPath = lang && lang !== "en" ? lang : ""
