@@ -5,7 +5,7 @@ subtitle: >-
   Coffee is a small tree or shrub that grows in the forest understory in its
   wild form, and traditionally was grown commercially under other trees that
   provided shade.
-image: /img/112233.jpg
+image: /img/1.png
 ---
 
 ### Shade-grown coffee
