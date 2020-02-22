@@ -1,7 +1,9 @@
 ---
 template: post
-title: "Frontend Job Interview Questions #1 — HTML Questions"
+title: 'Frontend Job Interview Questions #1 — HTML Questions'
 slug: interview-questions-html
+lang: en
+hasTranslation: false
 draft: false
 date: 2019-08-17T05:03:34.404Z
 tags:
