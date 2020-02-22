@@ -13,7 +13,9 @@ const onCreateNode = ({ node, actions, getNode }) => {
       createNodeField({
         node,
         name: "slug",
-        value: `/${dirname}/${node.frontmatter.slug}`,
+        value: `/${dirname}/${node.frontmatter.slug}/${
+          node.frontmatter.lang ? node.frontmatter.lang : ""
+        }`,
       })
     } else {
       const value = createFilePath({ node, getNode })
