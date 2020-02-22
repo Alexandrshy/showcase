@@ -8,14 +8,14 @@ const onCreateNode = ({ node, actions, getNode }) => {
   fmImagesToRelative(node)
 
   if (node.internal.type === "MarkdownRemark") {
-    if (typeof node.frontmatter.slug !== "undefined") {
+    const { slug, lang } = node.frontmatter
+    if (typeof slug !== "undefined") {
       const dirname = getNode(node.parent).relativeDirectory
+      const langPath = lang && lang !== "en" ? lang : ""
       createNodeField({
         node,
         name: "slug",
-        value: `/${dirname}/${node.frontmatter.slug}/${
-          node.frontmatter.lang ? node.frontmatter.lang : ""
-        }`,
+        value: `/${dirname}/${slug}/${langPath}`,
       })
     } else {
       const value = createFilePath({ node, getNode })
@@ -28,7 +28,7 @@ const onCreateNode = ({ node, actions, getNode }) => {
     createNodeField({
       node,
       name: "langKey",
-      value: node.frontmatter.lang ? node.frontmatter.lang : "",
+      value: lang ? lang : "",
     })
   }
 }
