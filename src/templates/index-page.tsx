@@ -1,12 +1,10 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 
 import LatestPosts from "../components/leatestPosts/leatestPosts"
 import { Layout } from "../components/layout/layout"
 import { Intro } from "../components/intro/intro"
 import { Wrapper } from "../components/wrapper/wrapper"
-
-import style from "./index-page.module.css"
 
 type PropsType = {
   data: {
@@ -30,11 +28,6 @@ const MainPage: React.FC<PropsType> = ({ data }) => {
       <Wrapper>
         <Intro title={title} subtitle={html} />
         <LatestPosts />
-        <div className={style.box}>
-          <Link to="/posts" className={style.link}>
-            Read all posts
-          </Link>
-        </div>
       </Wrapper>
     </Layout>
   )
