@@ -5,7 +5,7 @@ title: >-
   for work. Part 1
 slug: build-web-application-1
 lang: en
-hasTranslation: false
+hasTranslation: true
 draft: false
 date: 2019-11-12T21:59:00.000Z
 tags:
