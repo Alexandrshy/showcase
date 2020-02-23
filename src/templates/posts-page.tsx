@@ -62,7 +62,10 @@ export const blogPageQuery = graphql`
     allMarkdownRemark(
       limit: $postsLimit
       skip: $postsOffset
-      filter: { frontmatter: { template: { eq: "post" } } }
+      filter: {
+        frontmatter: { template: { eq: "post" } }
+        fields: { langKey: { eq: "en" } }
+      }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
@@ -70,6 +73,7 @@ export const blogPageQuery = graphql`
           id
           fields {
             slug
+            langKey
           }
           frontmatter {
             title
