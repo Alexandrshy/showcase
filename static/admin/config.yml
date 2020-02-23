@@ -11,7 +11,7 @@ collections:
     label: Posts
     folder: content/pages/posts
     create: true
-    slug: "{{slug}}"
+    slug: "{{fields.slug}}"
     preview_path: "blog/{{fields.slug}}"
     fields:
       - {
