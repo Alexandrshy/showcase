@@ -43,7 +43,10 @@ export default TagsPage
 export const tagsPageQuery = graphql`
   query TagsPage {
     allMarkdownRemark(
-      filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true } } }
+      filter: {
+        frontmatter: { template: { eq: "post" }, draft: { ne: true } }
+        fields: { langKey: { eq: "en" } }
+      }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       group(field: frontmatter___tags) {

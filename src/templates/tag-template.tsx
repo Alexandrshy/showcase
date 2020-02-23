@@ -75,6 +75,7 @@ export const tagPageQuery = graphql`
       skip: $postsOffset
       filter: {
         frontmatter: { tags: { in: [$tag] }, template: { eq: "post" } }
+        fields: { langKey: { eq: "en" } }
       }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
