@@ -34,7 +34,7 @@ This is what the new repository creation window looks like. You need to come up 
 
 Now let’s clone the new repository. GitHub offers to clone using SSH or HTTPS. Now I use the second method.
 
-```
+```cmd
 git clone https://github.com/Alexandrshy/react-ant.git
 ```
 
@@ -97,7 +97,7 @@ I think everything is clear here, and for a more detailed configuration, you may
 
 We will be returning to the `package.json` configuration in the future. But now it’s time to make the first commit.
 
-```
+```cmd
 git status
 git add package.json
 git commit -m "Init npm package"
@@ -161,7 +161,7 @@ And run the test:
 
 Great, the five line code has seven errors and one warning 👍 And immediately ESLint suggests me to automatically fix these errors, let’s try to do this:
 
-```
+```cmd
 ./node_modules/.bin/eslint index.ts --fix
 ```
 
