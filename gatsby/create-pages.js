@@ -29,6 +29,8 @@ const createPages = async ({ graphql, actions }) => {
             }
             fields {
               slug
+              langKey
+              hasTranslation
             }
           }
         }
@@ -41,12 +43,12 @@ const createPages = async ({ graphql, actions }) => {
   edges.forEach(edge => {
     const { id } = edge.node
     const { template } = edge.node.frontmatter
-    const { slug } = edge.node.fields
+    const { slug, langKey, hasTranslation } = edge.node.fields
     if (template === "post") {
       createPage({
-        path: edge.node.fields.slug,
+        path: slug,
         component: path.resolve("src/templates/post-template.tsx"),
-        context: { slug: edge.node.fields.slug },
+        context: { slug, langKey, hasTranslation },
       })
     } else {
       createPage({
