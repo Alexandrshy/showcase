@@ -7,12 +7,6 @@
   border-bottom: none;
 }
 
-p.date {
-  margin: 0 0 7px;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
 .title {
   margin: 0 0 12px;
   font-size: 2rem;
@@ -37,9 +31,5 @@ p.date {
 
   .title {
     font-size: 1.5rem;
-  }
-
-  p.date {
-    font-size: 0.9rem;
   }
 }
