@@ -40,7 +40,14 @@ const NotFoundTemplate: React.FC<PropsType> = ({ data }) => (
             <h2 className={style.title}>Page not found</h2>
             <h3 className={style.subtitle}>
               Something went wrong. Try refreshing the page or{" "}
-              <a>let me know</a> about the problem. Thanks!
+              <a
+                href="https://github.com/Alexandrshy/showcase/issues"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                let me know
+              </a>{" "}
+              about the problem. Thanks!
             </h3>
             <Link to="/" className={style.link}>
               Go to Home page
