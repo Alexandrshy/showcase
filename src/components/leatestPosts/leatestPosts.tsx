@@ -49,6 +49,7 @@ export default () => (
             fields: { langKey: { eq: "en" } }
           }
           limit: 5
+          sort: { order: DESC, fields: [frontmatter___date] }
         ) {
           edges {
             node {
