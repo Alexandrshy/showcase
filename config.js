@@ -1,5 +1,9 @@
 module.exports = {
-  url: "https://alexandrshy.netlify.com",
+  url: "https://alexandrshy.com",
+  github: {
+    name: "Alexandrshy",
+    repo: "showcase",
+  },
   name: "Showcase",
   title: "Blog by Alexandr Shulaev",
   description: "Personal website and blog",
@@ -19,13 +23,22 @@ module.exports = {
   ],
   postsPerPage: 5,
   author: {
-    name: "Alexandr Shulaev",
+    name: "Alex",
+    surname: "Shulaev",
     contacts: {
       email: "alexandrshy@gmail.com",
+      skype: {
+        url: "https://join.skype.com/invite/n4Opwfc9lxtg",
+        name: "alexandrshy1",
+      },
       telegram: "@alexandrshy",
       twitter: "https://twitter.com/alexandrshy",
       github: "https://github.com/Alexandrshy",
-      linkedin: "https://www.linkedin.com/in/alexandrshy",
+      linkedin: "alexandrshy",
+    },
+    workPlace: {
+      name: "GlassesUSA.com",
+      url: "https://www.glassesusa.com/",
     },
   },
   social: [

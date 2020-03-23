@@ -6,9 +6,10 @@ if (process.env.NODE_ENV === "development") {
 
 module.exports = {
   siteMetadata: {
-    title: siteConfig.title,
     url: siteConfig.url,
+    github: siteConfig.github,
     name: siteConfig.name,
+    title: siteConfig.title,
     description: siteConfig.description,
     menu: siteConfig.menu,
     author: siteConfig.author,
@@ -105,8 +106,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: "Blog by Alexandr Shulaev",
-        short_name: "Blog by Alexandr Shulaev",
+        name: siteConfig.title,
+        short_name: siteConfig.title,
         start_url: "/",
         background_color: "#f1db4f",
         theme_color: "#31332f",

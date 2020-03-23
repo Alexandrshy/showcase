@@ -6,6 +6,10 @@ export default function useSiteMetadata() {
       site {
         siteMetadata {
           url
+          github {
+            name
+            repo
+          }
           name
           title
           description
@@ -15,12 +19,21 @@ export default function useSiteMetadata() {
           }
           author {
             name
+            surname
             contacts {
               email
+              skype {
+                url
+                name
+              }
               telegram
               twitter
               github
               linkedin
+            }
+            workPlace {
+              name
+              url
             }
           }
           social {
