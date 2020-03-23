@@ -63,4 +63,5 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Subtitle", name: "subtitle", widget: "string" }
           - { label: "Image", name: "image", widget: "image" }
+          - { label: "Alt", name: "alt", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
