@@ -50,8 +50,8 @@
   --social-link-color-active: var(--mercury);
   --menu-link-color: var(--susty-gray);
   --menu-link-color-active: var(--mercury);
-  --tag-link-color: var(--susty-gray);
-  --tag-link-color-active: var(--mercury);
+  --gray-link-color: var(--susty-gray);
+  --gray-link-color-active: var(--mercury);
   --box-shadow: var(--athens-gray-rgba);
   --menu-hamburger-color: var(--athens-gray);
   --switch-bg: var(--athens-gray);
@@ -69,8 +69,8 @@
   --social-link-color-active: var(--mine-shaft);
   --menu-link-color: var(--boulder);
   --menu-link-color-active: var(--mine-shaft);
-  --tag-link-color: var(--boulder);
-  --tag-link-color-active: var(--mine-shaft);
+  --gray-link-color: var(--boulder);
+  --gray-link-color-active: var(--mine-shaft);
   --box-shadow: var(--black-pearl-rgba);
   --menu-hamburger-color: var(--black-pearl);
   --switch-bg: var(--black-pearl);
