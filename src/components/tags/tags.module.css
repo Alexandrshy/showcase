@@ -15,18 +15,18 @@
 }
 
 .link {
-  color: var(--tag-link-color);
+  color: var(--gray-link-color);
   transition: var(--ease-in-out-color-small);
   box-shadow: none;
 }
 
 @media (hover: hover) {
   .link:hover {
-    color: var(--tag-link-color-active);
+    color: var(--gray-link-color-active);
   }
 }
 
 .link:focus {
-  color: var(--tag-link-color-active);
-  outline: var(--tag-link-color-active) auto 5px;
+  color: var(--gray-link-color-active);
+  outline: var(--gray-link-color-active) auto 5px;
 }
