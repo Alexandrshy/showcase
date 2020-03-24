@@ -1,0 +1,33 @@
+.header {
+  margin-bottom: 55px;
+}
+
+.titleBox {
+  margin-bottom: 35px;
+}
+
+.title {
+  margin: 0 0 5px;
+  font-size: 2.35rem;
+  line-height: 1.35;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.35;
+}
+
+.desc p {
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .titleBox {
+    margin-bottom: 30px;
+  }
+}

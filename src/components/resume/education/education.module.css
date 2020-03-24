@@ -1,0 +1,13 @@
+.link {
+  color: var(--gray-link-color);
+  transition: var(--ease-in-out-color-small);
+  box-shadow: none;
+}
+
+p.name,
+p.specialization,
+p.time {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
