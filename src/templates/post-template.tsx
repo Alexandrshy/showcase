@@ -6,11 +6,9 @@ import { Layout } from "../components/layout/layout"
 import { Page } from "../components/page/page"
 import { Wrapper } from "../components/wrapper/wrapper"
 import { Time } from "../components/time/time"
+import useSiteMetadata from "../hooks/use-site-metadata"
 
 import style from "./post-page.module.css"
-
-const GITHUB_USERNAME = "Alexandrshy"
-const GITHUB_REPO_NAME = "showcase"
 
 type PropsType = {
   data: {
@@ -27,6 +25,7 @@ type PropsType = {
 }
 
 const BlogTemplate: React.FC<PropsType> = ({ data }) => {
+  const { github } = useSiteMetadata()
   const {
     markdownRemark: {
       frontmatter: { date, title },
@@ -35,10 +34,9 @@ const BlogTemplate: React.FC<PropsType> = ({ data }) => {
     },
   } = data
   const discussUrl = `https://mobile.twitter.com/search?q=https://alexandrshy.com/posts${slug}`
-  const gitHubUrl = `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}/edit/master/content/pages${slug.slice(
-    0,
-    -1
-  )}.md`
+  const gitHubUrl = `https://github.com/${github.name}/${
+    github.repo
+  }/edit/master/content/pages${slug.slice(0, -1)}.md`
 
   return (
     <Layout title={title}>

@@ -1,0 +1,72 @@
+.contactsItem {
+  margin: 0 0 20px;
+}
+
+.box {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+}
+
+.articles {
+  padding-left: 45px;
+}
+
+.articleTitle {
+  margin: 0 0 20px;
+}
+
+.additional {
+  width: 30%;
+}
+
+.main {
+  width: 70%;
+  padding-left: 40px;
+}
+
+.additionalItem {
+  margin-bottom: 60px;
+}
+
+.link {
+  color: var(--gray-link-color);
+  transition: var(--ease-in-out-color-small);
+  box-shadow: none;
+  font-weight: var(--font-weight-bold);
+}
+
+.period {
+  font-size: 1rem;
+}
+
+.brief .name,
+.brife .period {
+  margin: 0;
+}
+
+.unit {
+  margin-bottom: 85px;
+}
+
+@media (max-width: 1200px) {
+  .period {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .additional,
+  .main {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .box {
+    flex-wrap: wrap;
+  }
+
+  .additionalItem {
+    margin-bottom: 40px;
+  }
+}

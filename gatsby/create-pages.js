@@ -18,6 +18,11 @@ const createPages = async ({ graphql, actions }) => {
     component: path.resolve("./src/templates/tags-template.tsx"),
   })
 
+  createPage({
+    path: "/resume",
+    component: path.resolve("./src/templates/resume-template.tsx"),
+  })
+
   const result = await graphql(`
     {
       allMarkdownRemark {
