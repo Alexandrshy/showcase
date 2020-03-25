@@ -13,10 +13,6 @@ module.exports = {
       path: "/posts",
     },
     {
-      label: "About",
-      path: "/about",
-    },
-    {
       label: "Resume",
       path: "/resume",
     },

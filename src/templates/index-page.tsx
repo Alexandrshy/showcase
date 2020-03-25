@@ -10,7 +10,7 @@ type PropsType = {
   data: {
     markdownRemark: {
       html: string
-      frontmatter: { title: string; subtitle: string }
+      frontmatter: { title: string }
     }
   }
 }
@@ -19,7 +19,7 @@ const MainPage: React.FC<PropsType> = ({ data }) => {
   const {
     markdownRemark: {
       html,
-      frontmatter: { title, subtitle },
+      frontmatter: { title },
     },
   } = data
 
@@ -41,7 +41,6 @@ export const mainPageQuery = graphql`
       html
       frontmatter {
         title
-        subtitle
       }
     }
   }
